@@ -54,7 +54,7 @@ aside > div{
    -webkit-flex: 1 1 180px;
    flex:1 1 180x;
 }
-/* commment */
+/* created layout for html so that the mobile and tablet site will look appealing  */
 /* =============================
 	Mobile Styles: 0 - 480 pixels
    =============================
@@ -78,8 +78,7 @@ aside > div{
          display: none; 
       }
 }
-
-/* commment */
+/* /* set up webpage display for mobile  */
 
 /* =================================================
 	Tablet and Desktop Styles: 481 pixels and greater
@@ -98,4 +97,4 @@ aside > div{
       flex:1 1 auto;
    }
 }
-/* commment */
+/* set up webpage display for tablet */
