@@ -38,7 +38,7 @@ article{
    flex:1 3 180px;
 }
 
-
+/* added flex layout to body, article and section */
 /* ============================================
 	Mobile Devices: 0 - 480 pixels
    ============================================
@@ -57,7 +57,7 @@ article{
    }
 }
 
-
+/* added layout for mobile screens */
 /* ===================================================
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
@@ -89,3 +89,4 @@ img#panel.size4{
 }
 }
 
+/* added layout for tablet screens */
