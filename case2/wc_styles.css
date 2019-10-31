@@ -35,19 +35,67 @@ nav a#hole_list{
 article{
    -webkit-flex: 3 1 341px;
    flex:3 1 341px;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
 }
-
+section#stats{
+   -webkit-flex: 1 4 120px;
+   flex:1 4 120px;
+}
+section#summary{
+   -webkit-flex: 4 1 361px;
+   flex:4 1 361px;
+}
+aside{
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+}
+aside > div{
+   -webkit-flex: 1 1 180px;
+   flex:1 1 180x;
+}
+/* commment */
 /* =============================
 	Mobile Styles: 0 - 480 pixels
    =============================
 */
+@media only screen and (max-width: 480px) {
+    nav a#hole_list{
+      -webkit-order: 99;
+      order: 99;
+      }
+      footer{  
+         -webkit-order: 100;
+         order: 100;
+      }
+      nav.horizontal > ul{
+         display: none
+      }
+      a#navicon:hover+ul, nav.horizonal ul:hover{
+         display:block;
+      }   
+      aside{
+         display: none; 
+      }
+}
 
-
-
-
+/* commment */
 
 /* =================================================
 	Tablet and Desktop Styles: 481 pixels and greater
    =================================================
 */
-
+@media only screen and (min-width: 481px) {
+   a#navicon{
+      display: none;
+   }
+   nav.horizontal ul{
+      -webkit-flex-flow: row;
+      flex-flow: row;
+   }
+   li > ul{
+      -webkit-flex: 1 1 auto;
+      flex:1 1 auto;
+   }
+}
+/* commment */
