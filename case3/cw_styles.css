@@ -5,8 +5,9 @@
    Tutorial 5
    Case Problem 3
    
-   Author:   Audrey Sparks
-   Date:      
+   Author: Audrey Sparks
+   Date: October 31, 2019 
+
    
    Filename: cw_styles.css
 
@@ -17,26 +18,120 @@
 
 
 /* Import Basic Design Styles  */
-
-
+@import url(cw_designs.css);
 
 /* ===============================
 	General Styles for All Devices
    ===============================
 */
-
-
+nav#bottom{
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   justify-content: center;
+}
+nav#bottom ul{
+   max-width: 150px;
+}
 
 /* ===============================
 	Mobile Styles up to 480 pixels
    ===============================
 */
-	
-
-
-
+@media only screen and(max-width: 480px){
+   body{
+      color: rgb(211,211,211);
+      background-color: rgb(51,51,51);
+   }
+   aside,img, article{
+      display: none;
+   }
+   nav a#top > ul{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      font-size: 2.2em;
+      -webkit-flex: 1 1 130px;
+      flex: 1 1 130px;
+   }
+   nav#top ul li:nth-of-type(1){
+    background: url(cw_image01.png) center/contain no-repeat;
+    
+   }
+   nav#top ul li:nth-of-type(2){
+    background: url(cw_image02.png) center/contain no-repeat;
+     }
+   nav#top ul li:nth-of-type(3){
+    background: url(cw_image03.png) center/contain no-repeat;
+     }
+   nav#top ul li:nth-of-type(4){
+    background: url(cw_image04.png)center/contain no-repeat;
+     }
+   nav#top ul li:nth-of-type(5){
+    background: url(cw_image05.png) center/contain no-repeat;
+     }
+   nav#top ul li:nth-of-type(6){
+    background: url(cw_image06.png) center/contain no-repeat;
+     }
+   nav#links{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+     }
+   body > nav{
+    background-color: rgb(220,27,27);
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+     }
+   }
+   @media only screen and (max-width: 480px) {
+      aside{
+        -webkit-order: 99;
+        order: 99;
+     }
+   
+     footer{
+        -webkit-order: 100;
+        order: 100;
+     }
+   
+   }
 /* ============================================
 	Tablet and Desktop Devices: 481px or more 
    ============================================
 */
-
+@media only screen and (min-width: 481px){
+   body{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+   }
+   article{
+      -webkit-flex: 2 1 400px;
+      flex: 2 1 400px;
+   }
+   aside{
+      -webkit-flex: 1 2 200px;
+      flex: 1 2 200px;
+   }
+   nav#top ul{
+      display: -webkit-flex;
+      display: flex;
+      background-color: rgb(51,51,51);
+      line-height: 50px;
+      justify-content: center;
+      align-items: center;
+   }
+    nav#top li{
+      max-width: 80px;
+   }
+   p#links{
+      display:none;
+   }
+}
